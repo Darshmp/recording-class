@@ -1,0 +1,20 @@
+<!-- Add after the navbar -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Join Live Class</h2>
+    <div id="jitsi-meet" style="height: 600px;"></div>
+  </div>
+</section>
+
+<!-- Jitsi Script -->
+<script src="https://8x8.vc/vpaas-magic-cookie-1234567890/external_api.js"></script>
+<script>
+  const domain = 'meet.jit.si';
+  const options = {
+    roomName: 'RecordMaster-Live',
+    width: '100%',
+    height: '100%',
+    parentNode: document.querySelector('#jitsi-meet')
+  };
+  const api = new JitsiMeetExternalAPI(domain, options);
+</script>

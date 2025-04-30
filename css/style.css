@@ -1,0 +1,12 @@
+/* Custom styles */
+.hero {
+  padding: 100px 0;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
